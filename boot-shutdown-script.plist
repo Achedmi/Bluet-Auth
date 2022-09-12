@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key><string>boot.shutdown.script</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>sh</string>
+        <string>/Users/achedmi/Desktop/BluetoothHandler/bluetoothHandler.sh</string>
+    </array>
+
+    <key>StandardOutPath</key>
+    <string>/Users/achedmi/Desktop/BluetoothHandler/boot-shutdown.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/achedmi/Desktop/BluetoothHandler/boot-shutdown.err</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>EnableGlobbing</key>
+    <true/>
+
+</dict>
+</plist>
