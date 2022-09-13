@@ -4,9 +4,10 @@ onLogout() {
     exit
 }
 
-trap 'onLogout' SIGTERM SIGHUP SIGINT SIGKILL 
+trap 'onLogout' SIGTERM 
+trap 'onLogout' SIGHUP  
+trap 'onLogout' SIGINT 
+trap 'onLogout' SIGKILL 
 
-while true; do
-    sleep 86400 &
-    wait $!
-done
+tail -f /dev/null &
+wait $!
