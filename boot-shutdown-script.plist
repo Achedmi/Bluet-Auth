@@ -6,7 +6,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>sh</string>
-        <string>/Users/'USER_NAME'/Library/LaunchAgents/BluetoothHandler/bluetoothHandler.sh</string>
+        <string>/Users/'USER_NAME'/Library/LaunchAgents/Bluet-Auth/bluet-Auth.sh</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

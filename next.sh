@@ -1,6 +1,6 @@
 #!/bin/sh
 onLogout() {
-    ~/Library/LaunchAgents/BluetoothHandler/blueutil
+    ~/Library/LaunchAgents/Bluet-Auth/blueutil
     exit
 }
 
@@ -9,7 +9,7 @@ trap 'onLogout' SIGHUP
 trap 'onLogout' SIGINT 
 trap 'onLogout' SIGKILL 
 
-~/Library/LaunchAgents/BluetoothHandler/blueutil
+~/Library/LaunchAgents/Bluet-Auth/blueutil
 
 tail -f /dev/null &
 wait $!
